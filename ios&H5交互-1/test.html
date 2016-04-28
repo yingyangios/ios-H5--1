@@ -1,0 +1,56 @@
+<html>
+<head>
+<META http-equiv=Content-Type content=text/html; charset=utf-8>
+    <script type='text/javascript'>
+   
+    function getImageFromCamera(imageData)
+    {
+        var c=document.getElementById("camera");
+        var img = getImageFromData(imageData);
+        c.appendChild(img);
+    }
+    
+    function getImageFromPhotoLibrary(imageData)
+    {
+        
+        
+        var c=document.getElementById("photoLibrary");
+        var img = getImageFromData(imageData);
+        c.appendChild(img);
+        
+    }
+    
+    function getImageFromData(imageData)
+    {
+       
+       var img = new Image();
+       img.src = "data:image/jpeg;base64," + imageData;
+       img.style.width = "50px";
+       img.style.height = "50px";
+       return img;
+        
+    }
+    
+    </script>
+            
+    
+    <style>
+        body{font-size:11pt;}
+        a{text-decoration:none;
+                font-size:40px;}
+    </style>
+      
+</head>
+<body topmargin=2 leftmargin=2 bgcolor=#ffffff>
+    <base target=_blank>
+        
+    <div id="photoLibrary">
+         <a href='js-call://photoLibrary'>图库</a><br/>
+    </div>
+    <div style="height:50px;"/>
+        
+    <div id="camera">
+        <a href='js-call://camera'>相机</a></br>
+    </div>
+</body>
+</html>
