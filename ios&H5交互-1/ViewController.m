@@ -31,6 +31,7 @@
     
     UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     webView.scalesPageToFit = YES;
+    webView.dataDetectorTypes = UIDataDetectorTypePhoneNumber;
     webView.delegate = self;
     [webView loadRequest:loadRequest];
     self.webView = webView;
