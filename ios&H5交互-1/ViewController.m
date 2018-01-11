@@ -41,6 +41,8 @@
     NSLog(@"测试 dev");
     
     NSLog(@"dev1");
+    
+    NSLog(@"dev2");
 }
 
 - (void)viewWillDisappear:(BOOL)animated
