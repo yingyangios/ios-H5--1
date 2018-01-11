@@ -38,6 +38,8 @@
     
     [self.view addSubview:self.webView];
     
+    NSLog(@"测试 dev");
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
