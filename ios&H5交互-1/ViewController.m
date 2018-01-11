@@ -49,6 +49,8 @@
         [_webView stopLoading];
     }
     
+    NSLog(@"master");
+    
 //    _webView.delegate = nil;
 }
 
