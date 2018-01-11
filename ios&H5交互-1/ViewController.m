@@ -43,6 +43,8 @@
     NSLog(@"dev1");
     
     NSLog(@"dev2");
+    
+    NSLog(@"dev3");
 }
 
 - (void)viewWillDisappear:(BOOL)animated
