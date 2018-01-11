@@ -40,6 +40,7 @@
     
     NSLog(@"测试 dev");
     
+    NSLog(@"dev1");
 }
 
 - (void)viewWillDisappear:(BOOL)animated
